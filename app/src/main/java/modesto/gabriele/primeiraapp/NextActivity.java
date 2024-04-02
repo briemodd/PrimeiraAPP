@@ -12,9 +12,9 @@ public class NextActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next);
-        Intent i = getIntent();
-        String textoDigitado = i.getStringExtra("texto");
+        Intent i = getIntent(); // obtem o intent que veio de MainActivity
+        String textoDigitado = i.getStringExtra("texto"); // pega o texto que está dentro do intent
         TextView tvTexto = findViewById(R.id.tvTexto);
-        tvTexto.setText(textoDigitado);
+        tvTexto.setText(textoDigitado); // exibe o texto
     }
 }
